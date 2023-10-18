@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<<head>
+    <title>Fibonacci Credit Score!</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <h1>Welcome to Fibonacci Credit Score</h1>
+    <h2>Prototype</h2>
+    <p>Get your credit score here!</p>
+    <form method="post" action="/">
+        <!-- Add the form fields here, including questions for demographic and behavioral scores -->      
+        <div class="question"></div>
+            <label for="age">Age category:</label>
+            <select name="age" id="age">
+                <option value="0-18">0-18</option>
+                <option value="18-24">18-24</option>
+                <option value="25-40">25-40</option>
+                <option value="41-56">41-56</option>
+                <option value="57-75">57-75</option>
+                <option value="76+">76+</option>
+            <select
+
+        </div>
+        
+        <div class="question"></div>
+            <label for="marital_status">marital status category:</label>
+            <select name="marital_status" id="marital_status">
+                <option value="single">single</option>
+                <option value="married">married</option>
+            </select>
+
+        </div>
+        
+        <div class="question"></div>
+            <label for="enterprise">enterprise:</label>
+            <select name="enterprise" id="enterprise">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select>
+
+        </div>
+        
+        <div class="question"></div>
+            <label for="num_accounts">Number of accounts:</label>
+            <select name="num_accounts" id="num_accounts">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3+">3+</option>
+            </select>
+
+        </div>
+
+        
+        <div class="question"></div>
+            <label for="occupation">occupation category:</label>
+            <select name="occupation" id="occupation">
+                <option value="no job">no job</option>
+                <option value="primary">primary</option>
+                <option value="secondary">secondary</option>
+                <option value="tertiary">tertiary</option>
+            </select>
+        </div>
+       
+
+        <div class="question"></div>
+            <label for="home_ownership">home_ownership:</label>
+            <select name="home_ownership" id="home_ownership">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select>
+        </div>
+       
+
+        <div class="question"></div>
+            <label for="insurance_services">insurance_services:</label>
+            <select name="insurance_services" id="insurance_services">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select>
+        </div>
+
+        <div class="question"></div>
+            <label for="savings_methods">savings_services:</label>
+            <select name="savings_methods" id="savings_methods">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select>
+        </div>
+        
+
+        
+        <!-- For behavioral questions, add radio buttons or dropdowns -->
+        <h2>Behavioral Questions</h2>
+        <div class="question"></div>
+            <label>How often do you make impulsive purchases?</label>
+            <select name="impulse_1">
+                <option value="1">1 (Very often)</option>
+                <option value="2">2 (Often)</option>
+                <option value="3">3 (Sometimes)</option>
+                <option value="4">4 (Rarely)</option>
+                <option value="5">5 (Never)</option>
+            </select>
+        </div>
+
+        <div class="question"></div>
+            <label>Do you tend to act without thinking through the consequences?</label>
+            <select name="impulse_2">
+                <option value="1">1 (Very often)</option>
+                <option value="2">2 (Often)</option>
+                <option value="3">3 (Sometimes)</option>
+                <option value="4">4 (Rarely)</option>
+                <option value="5">5 (Never)</option>
+            </select>
+        </div>
+
+        <div class="question"></div>
+            <label>Are you prone to changing your mind quickly and frequently?</label>
+            <select name="impulse_3">
+                <option value="1">1 (Very often)</option>
+                <option value="2">2 (Often)</option>
+                <option value="3">3 (Sometimes)</option>
+                <option value="4">4 (Rarely)</option>
+                <option value="5">5 (Never)</option>
+            </select>
+        </div>
+        
+
+        <div class="question"></div>
+            <label>How often do you prioritize short-term rewards over long-term goals?</label>
+            <select name="time_1">
+                <option value="1">1 (Very often)</option>
+                <option value="2">2 (Often)</option>
+                <option value="3">3 (Sometimes)</option>
+                <option value="4">4 (Rarely)</option>
+                <option value="5">5 (Never)</option>
+            </select>
+        </div>
+        
+        <div class="question"></div>
+            <label>Are you patient when it comes to achieving your financial goals?</label>
+            <select name="time_2">
+                <option value="1">1 (not patient)</option>
+                <option value="2">2 (impatient])</option>
+                <option value="3">3 (moderately patient)</option>
+                <option value="4">4 (patient)</option>
+                <option value="5">5 (extremely patient)</option>
+            </select>
+        </div>
+        
+        <div class="question"></div>
+            <label>How often do you plan for your financial future?</label>
+            <select name="time_3">
+                <option value="1">1 (Never)</option>
+                <option value="2">2 (Rarely)</option>
+                <option value="3">3 (Sometimes)</option>
+                <option value="4">4 (Often)</option>
+                <option value="5">5 (Always)</option>
+            </select>
+        </div>
+        
+
+        <div class="question"></div>
+            <label>When it comes to investing, are you comfortable with high-risk, high-reward opportunities?</label>
+            <select name="risk_1">
+                <option value="1">1 (Very comfortable)</option>
+                <option value="2">2 (comfortable)</option>
+                <option value="3">3 (neutral)</option>
+                <option value="4">4 (cautious)</option>
+                <option value="5">5 (Very Cautious)</option>
+            </select>
+        </div>
+
+        <div class="question"></div>
+            <label>How do you react to financial market fluctuations?</label>
+            <select name="risk_2">
+                <option value="1">1 (panic but sell)</option>
+                <option value="2">2 (worry but hold)</option>
+                <option value="3">3 (monitor but stay invested)</option>
+                <option value="4">4 (stay calm and buy more)</option>
+                <option value="5">5 (excited and buy more)</option>
+            </select>
+        </div>
+
+        <div class="question"></div>
+            <label>Are you open to trying new financial products or investment strategies?</label>
+            <select name="risk_3">
+                <option value="1">1 (very cautious)</option>
+                <option value="2">2 (cautious)</option>
+                <option value="3">3 (neutral)</option>
+                <option value="4">4 (open)</option>
+                <option value="5">5 (very Open)</option>
+            </select>
+        </div>
+        
+        <div class="question"></div>
+            <label>How often do you keep your financial promises and commitments?</label>
+            <select name="trust_1">
+                <option value="1">1 (never)</option>
+                <option value="2">2 (rarely)</option>
+                <option value="3">3 (Sometimes)</option>
+                <option value="4">4 (often)</option>
+                <option value="5">5 (very often)</option>
+            </select>
+        </div>
+        
+        <div class="question"></div>
+            <label>Are you known for keeping your word and honoring agreements in your financial dealings?</label>
+            <select name="trust_2">
+                <option value="1">1 (never)</option>
+                <option value="2">2 (rarely)</option>
+                <option value="3">3 (Sometimes)</option>
+                <option value="4">4 (often)</option>
+                <option value="5">5 (always)</option>
+            </select>
+        </div>
+
+        <div class="question"></div>
+            <label>How comfortable do people feel in entrusting you with financial responsibilities?</label>
+            <select name="trust_3">
+                <option value="1">1 (not at all comfortable)</option>
+                <option value="2">2 (slightly comfortable)</option>
+                <option value="3">3 (moderately comfortable)</option>
+                <option value="4">4 (comfortable)</option>
+                <option value="5">5 (very comfortable)</option>
+            </select>
+        </div>
+
+        <!-- Repeat for other behavioral questions -->
+
+        <div class="question"></div>
+            <input type="submit" value="Calculate Credit Score">
+        </div>
+    </form>
+</body>
+</html>

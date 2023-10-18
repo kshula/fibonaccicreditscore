@@ -1,0 +1,44 @@
+/* Add CSS styles to format questions */
+.question {
+    margin-bottom: 13px; /* Add space below each question */
+}
+
+/* Apply a background color to the entire form */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style headings and labels */
+h1, label {
+    color: #333;
+}
+
+/* Style input fields */
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add hover effect to the submit button */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci Credit Score Results</title>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <br/>
+    <img src="{{ url_for('static', filename='images/smile.jpg') }}">
+</head>
+<body>
+    <h1>Your Credit Score</h1>
+    <p>Credit Score: {{ credit_score }}</p>
+    <p>Grade: {{ grade }}</p>
+    
+</body>
+</html>
